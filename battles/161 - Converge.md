@@ -35,6 +35,29 @@
   <summary>Using square and cross</summary>
 
   ```
+<p><div><div>
+<style>
+  body{
+    background: #E3516E;
+    display: grid;
+    place-items: center;
+  }
+  p {
+    width: 184.5px;
+    aspect-ratio: 1;
+    background: #FADE8B;
+  }
 
+  div {
+    position: absolute;
+    background: #E3516E;
+    width: 30px;
+    height: 100%;
+    rotate: 45deg;
+    > div {
+      rotate: -90deg;
+    }
+  }
+</style>
 ```
 </details>
