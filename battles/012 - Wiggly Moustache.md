@@ -1,31 +1,32 @@
 # TARGET
 
-![image](https://github.com/gaschneider/cssbattle/assets/16023844/1ea9c8a9-7886-4a05-9f35-fdb383a123d6)
+![image](https://github.com/gaschneider/cssbattle/assets/16023844/876545ab-a9a1-4d1c-9035-e01222395913)
 
 ```
-<a><a z b><a c><a z d><a e><a z f><a g><a z h>
+<a c><a c l><a c r><a d l><a d r>
 <style>
   body{
+    background:#F5D6B4;
     display:grid;
     place-items:center;
-    background:radial-gradient(circle,#48BF7D 30px, #024817 0)
   }
   a{
     position:absolute;
-    width:40;
-    height:40;
+    width:60;
+    aspect-ratio:1;
     border-radius:50%;
-    background:#176C36;
-    top:60;
-    transform-origin:20px 90px;
   }
-  [b]{rotate:45deg}
-  [c]{rotate:90deg}
-  [d]{rotate:135deg}
-  [e]{rotate:180deg}
-  [f]{rotate:225deg}
-  [g]{rotate:270deg}
-  [h]{rotate:315deg}
-  [z]{background:#48BF7D}
+  [c]{
+    border:20px solid#D86F45;
+    clip-path:polygon(0 0,100% 0,100% 50%,0 50%)
+  }
+  [l],[r]{rotate:180deg}
+  [l]{left:70}
+  [r]{right:70}
+  [d]{
+    width:20;
+    border-radius:50%;
+    background:#D86F45;
+  }
 </style>
 ```
